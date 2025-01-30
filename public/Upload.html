@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="Upload.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Usena</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="shop.html">Home</a></li>
+                    <li><a href="cart.html">Markbook</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="logoutButton">Logout</button>
+    </header>
+    <!-- User Profile Section -->
+    <section class="user-profile">
+        <div class="container">
+
+    <!-- Upload Product Section -->
+    <section id="upload" class="upload hidden">
+        <div class="container">
+            <h2>Upload Your Product</h2>
+            <form id="uploadForm">
+                <input type="text" id="product-name"name="name" placeholder="Product Name" required />
+                <textarea name="description" id="product-description"placeholder="Product Description" required></textarea>
+                <input type="number"  id="product-price" name="price" placeholder="Price" required />
+                <input type="text"id="dealer-mobile" name="dealer_mobile" placeholder="Dealer Mobile" required />
+                <input type="file"id="product-image" name="image" accept="image/*" required />
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        </section>
+       
+<!-- Upload Page -->
+
+    
+        <!-- Quantity Modal -->
+        <div id="quantity-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-quantity-modal" class="close">&times;</span>
+                <h3>Specify Quantity</h3>
+                <input type="number" id="quantity-input" placeholder="Enter quantity" min="1" value="1">
+                <button id="confirm-action" class="btn">Confirm</button>
+            </div>
+        </div>
+    
+
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Usena. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="Upload.js"></script>
+</body>
+</html>

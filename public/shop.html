@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usena - E-Commerce Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+ 
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Usena</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#products">products</a></li>
+                    <li><a href="Upload.html">Upload</a></li>
+                    <li><a href="cart.html">Markbook</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-actions">
+               
+                <button id="cart-btn" class="btn" onclick="location.href='mark.html'">Marked (0)</button>
+                <button id="login-btn" class="btn" onclick="window.location.href='Login.html'"><i class="fas fa-user-plus"></i> Login </button>
+                <button id="logoutButton">Logout</button>
+               
+            </div>
+        </div>
+    </header>
+            <aside>
+
+                <h2>Share you comment</h2>
+                <h1>Recommend on the best products!</h1>
+                <form id="commentForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <textarea id="comment" placeholder="Your Comment" required></textarea>
+                    <button type="submit"><i class="fa-solid fa-comment"></i></i>Post Comment</button>
+                </form>
+                <h2>COMMENTS</h2>
+                <section id="suggestions" >
+                <div id="comment-list"></div>
+                </section>                
+                
+
+            
+       
+            </aside>
+
+   
+  <div id="container">
+
+    <article>
+
+        <H1>All You Need To Start Farming</H1>
+        <p>
+            The world of farm products is rich with diversity and passion. From fresh produce to state-of-the-art tools, there’s something for everyone here. We invite you to explore our selection, learn about the benefits of local and sustainable farming, and contribute your thoughts along the way. Together, let’s celebrate the beauty of agriculture and all the wonderful products it brings to our lives! 
+        </p>
+        <h2>Farm Harvests: Nature's Bounty</h2>
+        <p>
+            Farm harvests play a crucial role in our daily lives, providing not just food, but also a connection to the land.
+            From vine-ripened tomatoes to freshly picked apples,
+            artisanal products like cheese, yogurt, and grass-fed beef are highly sought after.
+        </p>
+        <ol>
+            <li>. Fruits and Vegetables</li>
+        <li>Herbs and Spices</li>
+        <li>Dairy and Meat Products</li>
+        <li>Grains and Pulses</li>
+        </ol>
+
+        <h3> Farm Tools: Essential Equipment for Every Farmer and Gardener</h3>
+        <p>To grow and harvest these wonderful products, having the right tools is essential. Here are some must-have tools for both small gardens and larger farms:</p>
+
+        <ul>
+            <li>Hand tools</li>
+            <li>Power equipment</li>
+            <li>Storage solutions</li>
+            <li>Building materials</li>
+        </ul>
+
+
+        <h4>Fan Fucts About the Farm</h4>
+        <li>Sweet potatoes are only distantly related to potatoes</li>
+        <li>Did you know that strawberries are the only fruit with seeds on the outside?</li>  
+        <li>Approximately one-third of the food we consume relies on pollination, and bees play a vital role in this process.</li>
+        
+
+
+<!-- All Products Section -->
+<section id="products" class="products">
+    <div class="container">
+        <h2>All Products</h2>
+        <input type="text" id="search-bar" placeholder="Search products..." class="search-input">
+        <button id="search-btn" class="btn">Search</button>
+        <div id="product-list" class="product-list">
+            
+            <!-- Dynamically loaded products will appear here -->
+        </div>
+    </div>
+    </section>
+    
+    
+
+    <!-- Quantity Modal -->
+    <div id="quantity-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-quantity-modal" class="close">&times;</span>
+            <h3>Specify Quantity</h3>
+            <input type="number" id="quantity-input" placeholder="Enter quantity" min="1" value="1">
+            <button id="confirm-action" class="btn">Confirm</button>
+        </div>
+    </div>
+
+    </article>
+ 
+    
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+    <p>&copy; 2025 Usena. All Rights Reserved.</p>
+    <div class="social-links">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+    </div>
+</div>
+</footer>
+
+
+  </div>
+            
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="Upload.js"></script>
+
+</body>
+</html>
